@@ -13,7 +13,7 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-<form action="store-reservasi.php" method="POST">
+<form action="store-motor.php" method="POST">
         <?php
         include("koneksi.php");
         $sql = "SELECT * FROM user";
