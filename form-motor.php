@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-       <!-- Required meta tags -->
-       <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
     <title>Formulir Motor</title>
 </head>
 <link rel="stylesheet" href="style.css">
+
 <body>
-<form action="store-motor.php" method="POST">
+    <form action="store-motor.php" method="POST">
         <?php
         include("koneksi.php");
         $sql = "SELECT * FROM user";
@@ -84,4 +82,3 @@
 </body>
 
 </html>
-

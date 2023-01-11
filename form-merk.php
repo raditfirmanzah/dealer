@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Merk</title>
 </head>
+
+<link rel="stylesheet" href="style.css">
 
 <body>
     <header>
@@ -13,18 +16,19 @@
 
         <fieldset>
 
-        <p>
-            <label for="nama_merk">Nama Merk: </label>
-            <input type="text" name="nama_merk" placeholder="nama_merk" />
-        </p>
-       
-        <p>
-            <input type="submit" value="Daftar" name="daftar" />
-        </p>
+            <p>
+                <label for="nama_merk">Nama Merk: </label>
+                <input type="text" name="nama_merk" placeholder="nama_merk" />
+            </p>
+
+            <p>
+                <input type="submit" value="Daftar" name="daftar" />
+            </p>
 
         </fieldset>
 
     </form>
 
-    </body>
+</body>
+
 </html>
