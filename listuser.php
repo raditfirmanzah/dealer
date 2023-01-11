@@ -23,7 +23,7 @@ include('head.php');
         <tbody>
 
             <?php
-            $sql = "SELECT * FROM customer";
+            $sql = "SELECT * FROM user";
             $query = mysqli_query($db, $sql);
 
             while ($user = mysqli_fetch_array($query)) {
@@ -32,8 +32,8 @@ include('head.php');
                 echo "<td>" . $user['id'] . "</td>";
                 echo "<td>" . $user['nama'] . "</td>";
                 echo "<td>" . $user['username'] . "</td>";
-                echo "<td>" . $usr['no_hp'] . "</td>";
-                echo "<td>" . $usr['password'] . "</td>";
+                echo "<td>" . $user['no_hp'] . "</td>";
+                echo "<td>" . $user['password'] . "</td>";
 
                 echo "<td>";
                 echo "<a href=edituser.php?id=$user[id] class='btn btn-warning'>Edit</a> | ";

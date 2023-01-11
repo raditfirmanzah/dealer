@@ -12,7 +12,7 @@
         <h3>Merk Motor</h3>
     </header>
 
-    <form action="store.php" method="POST">
+    <form action="storemerk.php" method="POST">
 
         <fieldset>
 

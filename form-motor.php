@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-    <form action="store-motor.php" method="POST">
+    <form action="storemotor.php" method="POST">
         <?php
         include("koneksi.php");
         $sql = "SELECT * FROM user";
