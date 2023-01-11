@@ -8,30 +8,30 @@ include("head.php")
 
 <head>
 
-    <title>Hotel</title>
+    <title>Dealer</title>
 </head>
 
 <body>
     <header>
         <h1 style="text-align: center;">
-            <b>LIST RESERVASI</b>
+            <b>LIST MOTOR</b>
         </h1>
     </header>
 
 
-    <div class="table-reservasi">
+    <div class="table-motor">
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Kode Reservasi</th>
-                        <th>No Customer</th>
-                        <th>No Kamar</th>
-                        <th>Tipe Kamar</th>
-                        <th>Lama Menginap</th>
-                        <th>Tanggal Check In</th>
-                        <th>Tanggal Check Out</th>
+                        <th>Id User</th>
+                        <th>Id Merk</th>
+                        <th>Warna</th>
+                        <th>Kode Mesin</th>
+                        <th>CC</th>
+                        <th>No Rangka</th>
+                        <th>No Polisi</th>
                         <th>Total</th>
                         <th>Aksi</th>
                     </tr>
@@ -39,28 +39,28 @@ include("head.php")
                 <tbody>
 
                     <?php
-                    $sql = "SELECT reservasi.id, reservasi.tgl_ci, reservasi.tgl_co,reservasi.total, reservasi.lama_menginap, reservasi.kd_reservasi, customer.nm_customer, customer.no_id, kamar.no_kmr, kamar.tipe_kmr  FROM reservasi INNER JOIN customer ON reservasi.id_customer = customer.id INNER JOIN kamar ON reservasi.id_kamar = kamar.id";
+                    $sql = "SELECT * FROM motor";
                     $query = mysqli_query($db, $sql);
 
-                    while ($reservasi = mysqli_fetch_array($query)) {
+                    while ($motor = mysqli_fetch_array($query)) {
                         echo "<tr>";
 
-                        echo "<td>" . $reservasi['id'] . "</td>";
-                        echo "<td>" . $reservasi['kd_reservasi'] . "</td>";
-                        echo "<td>" . $reservasi['nm_customer'] . "</td>";
-                        echo "<td>" . $reservasi['no_kmr'] . "</td>";
-                        echo "<td>" . $reservasi['tipe_kmr'] . "</td>";
-                        echo "<td>" . $reservasi['lama_menginap'] . "</td>";
-                        echo "<td>" . $reservasi['tgl_ci'] . "</td>";
-                        echo "<td>" . $reservasi['tgl_co'] . "</td>";
-                        echo "<td>" . $reservasi['total'] . "</td>";
+                        echo "<td>" . $motor['id'] . "</td>";
+                        echo "<td>" . $motor['id_user'] . "</td>";
+                        echo "<td>" . $motor['id_merk'] . "</td>";
+                        echo "<td>" . $motor['warna'] . "</td>";
+                        echo "<td>" . $motor['kode_mesin'] . "</td>";
+                        echo "<td>" . $motor['cc'] . "</td>";
+                        echo "<td>" . $motor['no_rangka'] . "</td>";
+                        echo "<td>" . $motor['no_polisi'] . "</td>";
+                        echo "<td>" . $motor['total'] . "</td>";
 
 
 
 
                         echo "<td>";
-                        echo '<a href=editreservasi.php?id=' . $reservasi['id'] . ' class="btn btn-warning">Edit</a> | ';
-                        echo '<a href="hapusreservasi.php?id=' . $reservasi['id'] . '" class="btn btn-danger">Hapus</a>';
+                        echo '<a href=editmotor.php?id=' . $motor['id'] . ' class="btn btn-warning">Edit</a> | ';
+                        echo '<a href="hapusmoor.php?id=' . $motor['id'] . '" class="btn btn-danger">Hapus</a>';
                         echo "</td>";
 
                         echo "</tr>";
@@ -79,7 +79,7 @@ include("head.php")
             </div>
             <div class="col-4">
                 <nav>
-                    <a href="daftarreservasi.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+                    <a href="form-motor.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
                 </nav>
             </div>
         </div>

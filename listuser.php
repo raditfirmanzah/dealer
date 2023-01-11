@@ -4,50 +4,50 @@ include('head.php');
 ?>
 <header>
     <h1 style="text-align: center;">
-        <b>USER</b>
+        <b>List User</b>
     </h1>
 </header>
 
-<div class="table-customer">
-    <div class="table-responsive">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Nama</th>
-                    <th>Username</th>
-                    <th>No Hp</th>
-                    <th>Password</th>
-                </tr>
-            </thead>
-            <tbody>
 
-                <?php
-                $sql = "SELECT * FROM customer";
-                $query = mysqli_query($db, $sql);
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nama</th>
+                <th>Username</th>
+                <th>No Hp</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
 
-                while ($hotel = mysqli_fetch_array($query)) {
-                    echo "<tr>";
+            <?php
+            $sql = "SELECT * FROM customer";
+            $query = mysqli_query($db, $sql);
 
-                    echo "<td>" . $hotel['id'] . "</td>";
-                    echo "<td>" . $hotel['no_id'] . "</td>";
-                    echo "<td>" . $hotel['nm_customer'] . "</td>";
-                    echo "<td>" . $hotel['gender'] . "</td>";
+            while ($user = mysqli_fetch_array($query)) {
+                echo "<tr>";
 
+                echo "<td>" . $user['id'] . "</td>";
+                echo "<td>" . $user['nama'] . "</td>";
+                echo "<td>" . $user['username'] . "</td>";
+                echo "<td>" . $usr['no_hp'] . "</td>";
+                echo "<td>" . $usr['password'] . "</td>";
 
-                    echo "<td>";
-                    echo "<a href=editcustomer.php?id=$hotel[id] class='btn btn-warning'>Edit</a> | ";
-                    echo '<a href="hapuscustomer.php?id= ' . $hotel['id'] . '" class="btn btn-danger">Hapus</a>';
-                    echo "</td>";
+                echo "<td>";
+                echo "<a href=edituser.php?id=$user[id] class='btn btn-warning'>Edit</a> | ";
+                echo '<a href="hapususer.php?id= ' . $user['id'] . '" class="btn btn-danger">Hapus</a>';
+                echo "</td>";
 
-                    echo "</tr>";
-                }
-                ?>
-            </tbody>
+                echo "</tr>";
+            }
+            ?>
+        </tbody>
 
-        </table>
-    </div>
+    </table>
 </div>
+
 
 
 <div class="container text-center">
@@ -59,7 +59,7 @@ include('head.php');
         </div>
         <div class="col-4">
             <nav>
-                <a href="daftarcustomer.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+                <a href="form-merk.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
             </nav>
         </div>
     </div>

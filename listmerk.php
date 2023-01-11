@@ -5,7 +5,7 @@ include('head.php')
 
 <header>
     <h1 style="text-align: center;">
-        <b>LIST KAMAR</b>
+        <b>LIST MERK</b>
     </h1>
 </header>
 
@@ -16,28 +16,23 @@ include('head.php')
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>No Kamar</th>
-                    <th>Tipe Kamar</th>
-                    <th>Aksi</th>
-                </tr>
+                    <th>Nama Merk</th>
+
             </thead>
             <tbody>
                 <?php
-                $sql = "SELECT * FROM kamar";
+                $sql = "SELECT * FROM merk";
                 $query = mysqli_query($db, $sql);
 
-                while ($kamar = mysqli_fetch_array($query)) {
+                while ($merk = mysqli_fetch_array($query)) {
                     echo "<tr>";
 
-                    echo "<td>" . $kamar['id'] . "</td>";
-                    echo "<td>" . $kamar['no_kmr'] . "</td>";
-                    echo "<td>" . $kamar['tipe_kmr'] . "</td>";
-
-
+                    echo "<td>" . $merk['id'] . "</td>";
+                    echo "<td>" . $merk['nama_merk'] . "</td>";
 
                     echo "<td>";
-                    echo '<a href=editkamar.php?id=' . $kamar['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapuskamar.php?id=' . $kamar['id'] . '" class="btn btn-danger">Hapus</a>';
+                    echo '<a href=editmerk.php?id=' . $merk['id'] . ' class="btn btn-warning">Edit</a> | ';
+                    echo '<a href="hapusmerk.php?id=' . $merk['id'] . '" class="btn btn-danger">Hapus</a>';
                     echo "</td>";
 
                     echo "</tr>";
@@ -58,7 +53,7 @@ include('head.php')
         </div>
         <div class="col-4">
             <nav>
-                <a href="daftarkamar.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+                <a href="form-merk.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
             </nav>
         </div>
     </div>
