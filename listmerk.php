@@ -4,13 +4,13 @@ include('head.php')
 ?>
 
 <header>
-    <h1 style="text-align: center;">
+    <p>
         <b>LIST MERK</b>
-    </h1>
+    </p>
 </header>
 
 
-<div class="table-user">
+<div class="table-merk">
     <div class="table-responsive">
         <table class="table table-hover ">
             <thead>

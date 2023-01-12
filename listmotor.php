@@ -13,9 +13,9 @@ include("head.php")
 
 <body>
     <header>
-        <h1 style="text-align: center;">
+        <p>
             <b>LIST MOTOR</b>
-        </h1>
+        </p>
     </header>
 
 

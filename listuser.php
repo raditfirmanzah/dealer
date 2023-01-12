@@ -3,9 +3,9 @@ include("koneksi.php");
 include('head.php');
 ?>
 <header>
-    <h1 style="text-align: center;">
-        <b>List User</b>
-    </h1>
+    <p>
+        <b>LIST USER</b>
+    </p>
 </header>
 
 <div class="tabel-user">

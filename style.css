@@ -7,11 +7,40 @@ body{
     background-size: cover;
     height: 100%;
 
-} */
+}
+
+header p{
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+
+.tabel-user{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+}
+
+.table-motor{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.table-merk{
+    background-color: white;
+    width: 20%;
+    margin: auto;
+}
+
+.table tr td, .table tr th{
+    
+    color: black;   
+}
 
 
-body{
-    background-image: url(profile.jpg);
+p{
+    color: white    ;
 }
 
 
