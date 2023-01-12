@@ -17,16 +17,16 @@ if (isset($_POST['simpan'])) {
     $total = $_POST['total'];
 
     // 
-    $sql = "UPDATE motor SET id_user='$id_user', id_merk='$id_merk', warna='$warna', kode_mesin='$kode_mesin', cc='$cc', no_rangka='$no_rangka', no_polisi='$no_polisi', total='$total' WHERE id=$id";
+    $sql = "INSERT INTO motor (id, id_user, id_merk, warna, kode_mesin, cc, no_rangka, no_polisi, total) VALUE ('$id', '$id_user', '$id_merk', '$warna', '$kode_mesin', '$cc', '$no_rangka', '$mo_polisi', '$total')"; 
     $query = mysqli_query($db, $sql);
 
     // 
     if ($query) {
         // 
-        header('Location: listmotor.php');
+        header('location: crud.php?status=sukses');
     } else {
         //
-        die("Gagal menyimpan perubahan...");
+        header('location: crud.php?status=gagal');
     }
 } else {
     die("Akses dilarang...");
