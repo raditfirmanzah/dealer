@@ -3,7 +3,7 @@
 include("koneksi.php");
 
 // 
-if (isset($_POST['simpan'])) {
+if (isset($_POST['daftar'])) {
 
     // 
     $id = $_POST['id'];
