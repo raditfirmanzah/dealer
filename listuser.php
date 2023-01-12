@@ -59,7 +59,7 @@ include('head.php');
         </div>
         <div class="col-4">
             <nav>
-                <a href="form-merk.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
+                <a href="form-user.php" class="btn btn-light" style="margin-bottom: 1rem; margin-top:1rem; margin-left:2rem;">[+] Tambah Baru</a>
             </nav>
         </div>
     </div>

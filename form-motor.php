@@ -16,8 +16,8 @@
         include("koneksi.php");
         $sql = "SELECT * FROM user";
         $query = mysqli_query($db, $sql);
-        $sqlkamar = "SELECT * FROM merk";
-        $querykamar = mysqli_query($db, $sqlkamar);
+        $sqlmerk = "SELECT * FROM merk";
+        $querymerk= mysqli_query($db, $sqlmerk);
         ?>
 
         <div class="custom-info">
