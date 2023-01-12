@@ -10,7 +10,7 @@ include('head.php')
 </header>
 
 
-<div class="table-kamar">
+<div class="table-user">
     <div class="table-responsive">
         <table class="table table-hover ">
             <thead>
@@ -22,7 +22,7 @@ include('head.php')
             <tbody>
                 <?php
                 $sql = "SELECT * FROM merk";
-                $query = mysqli_query($db,$sql);
+                $query = mysqli_query($db, $sql);
 
                 while ($merk = mysqli_fetch_array($query)) {
                     echo "<tr>";
