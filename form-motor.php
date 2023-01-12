@@ -11,6 +11,19 @@
 <link rel="stylesheet" href="style.css"> -->
 
 <!-- <body> -->
+
+<?php
+include('head.php');
+?>
+
+<header>
+    <p>
+        <b>
+            FORM EDIT MOTOR
+        </b>
+    </p>
+</header>
+
 <form action="storemotor.php" method="POST">
     <?php
     include("koneksi.php");
@@ -20,64 +33,101 @@
     $querymerk = mysqli_query($db, $sqlmerk);
     ?>
 
-    <div class="custom-info">
-        <fieldset>
 
-            <div class="input-box" style="margin-bottom: 20px;">
-                <label for="id_user">Pilih User: </label>
-                <select name="id_user">
-                    <option value="">Pilih User</option>
-                    <?php
-                    while ($user = mysqli_fetch_assoc($query)) {
-                        echo "<option value=" . $user['id'] . ">" . $user['nama'] . "</option>";
-                    } ?>
-                </select>
-            </div>
+    <div class="container">
+        <div class="card card-user">
+            <div class="card-body">
 
-            <div class="input-box" style="margin-bottom: 20px;">
-                <label for="id_merk">Pilih Merk: </label>
-                <select name="id_merk">
-                    <option value="">Pilih Merk</option>
-                    <?php
-                    while ($merk = mysqli_fetch_assoc($querymerk)) {
-                        echo "<option value=" . $merk['id'] . ">" . $merk['nama_merk'] . "</option>";
-                    } ?>
-                </select>
-            </div>
 
-            <div class="input-box">
-                <label for="warna">Warna: </label>
-                <input type="text" name="warna">
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="id_user">Pilih User: </label>
+                        <select name="id_user" class="form-control" aria-label="default input example">
+                            <option value="">Pilih User</option>
+                            <?php
+                            while ($user = mysqli_fetch_assoc($query)) {
+                                echo "<option value=" . $user['id'] . ">" . $user['nama'] . "</option>";
+                            } ?>
+                        </select>
+                    </div>
 
-            <div class="input-box">
-                <label for="kode_mesin">Kode mesin: </label>
-                <input type="text" name="kode_mesin">
-            </div>
+                    <div class="col-md-6">
+                        <label for="id_merk">Pilih Merk: </label>
+                        <select name="id_merk" class="form-control" aria-label="default input example">
+                            <option value="">Pilih Merk</option>
+                            <?php
+                            while ($merk = mysqli_fetch_assoc($querymerk)) {
+                                echo "<option value=" . $merk['id'] . ">" . $merk['nama_merk'] . "</option>";
+                            } ?>
+                        </select>
+                    </div>
 
-            <div class="input-box">
-                <label for="cc">Cc: </label>
-                <input type="text" name="cc">
-            </div>
+                    <div class="col-md-6">
+                        <label for="warna">Warna: </label>
+                        <input class="form-control" type="text" name="warna" placeholder="Warna" aria-label="default input example">
+                    </div>
 
-            <div class="input-box">
-                <label for="no_rangka">No Rangka: </label>
-                <input type="text" name="no_rangka">
-            </div>
-            <div class="input-box">
-                <label for="no_polisi">No Polisi: </label>
-                <input type="text" name="no_polisi">
-            </div>
-            <div class="input-box">
-                <label for="total">Total: </label>
-                <input type="text" name="total">
-            </div>
-            <p style="margin-top: 1rem; font-size: medium">
-                <input type="submit" value="Daftar" name="daftar" />
-            </p>
 
-        </fieldset>
+                    <div class="col-md-6">
+                        <label for="kode_mesin">Kode mesin: </label>
+                        <input class="form-control" type="text" name="kode_mesin" placeholder="Kode Mesin" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cc">Cc: </label>
+                        <input class="form-control" type="text" name="cc" placeholder="CC" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="no_rangka">No Rangka: </label>
+                        <input class="form-control" type="text" name="no_rangka" placeholder="no_rangka" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="no_polisi">No Polisi: </label>
+                        <input class="form-control" type="text" name="no_polisi" placeholder="No Polisi" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="total">Total: </label>
+                        <input class="form-control" type="text" name="total" placeholder="Total" aria-label="default input example">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- 
+
+     <div class="input-box">
+        
+    </div>
+
+    <div class="input-box">
+        
+    </div>
+
+    <div class="input-box">
+        
+    </div>
+
+    <div class="input-box">
+        
+    </div>
+    <div class="input-box">
+        <label for="no_polisi">No Polisi: </label>
+        <input type="text" name="no_polisi">
+    </div>
+    <div class="input-box">
+        
+    </div>
+    <p style="margin-top: 1rem; font-size: medium">
+        <input type="submit" value="Daftar" name="daftar" />
+    </p>
+ -->
+
+
 
 </form>
 
@@ -85,3 +135,7 @@
 </body>
 
 </html> -->
+
+<?php
+include('bottom.php');
+?>
