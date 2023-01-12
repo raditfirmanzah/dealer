@@ -11,16 +11,16 @@ if (isset($_POST['simpan'])) {
 
 
     // 
-    $sql = "UPDATE merk SET nama_merk='$nama_merk' WHERE id=$id";
+    $sql =  "INSERT INTO merk (id, nama_merk) VALUE ('$id', '$nama_merk')";
     $query = mysqli_query($db, $sql);
 
     // 
     if ($query) {
         // 
-        header('Location: listmerk.php');
+        header('Location: crud.php?status=sukses');
     } else {
         //
-        die("Gagal menyimpan perubahan...");
+        header('Location: crud.php?status=gagal');
     }
 } else {
     die("Akses dilarang...");
