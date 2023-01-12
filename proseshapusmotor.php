@@ -1,6 +1,6 @@
 <?php
 
-include("koneksi.php");
+include("konek.php");
 
 if( isset($_GET['id']) ){
 
@@ -8,12 +8,12 @@ if( isset($_GET['id']) ){
     $id = $_GET['id'];
 
    
-    $sql = "DELETE FROM merk WHERE id=$id";
+    $sql = "DELETE FROM motor WHERE id=$id";
     $query = mysqli_query($db, $sql);
 
     
     if( $query ){
-        header('Location: listmerk.php');
+        header('Location: listmotor.php');
     } else {
         die("gagal menghapus...");
     }
