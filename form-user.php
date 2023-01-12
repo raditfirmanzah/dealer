@@ -1,46 +1,58 @@
-<!DOCTYPE html>
-<html>
+<!-- <!DOCTYPE html>
+<html> -->
 
-<link rel="stylesheet" href="style.css">
 
-<head>
+<!-- <head>
+    <link rel="stylesheet" href="style.css">
     <title>Formulir pemesanan motor</title>
-</head>
+</head> -->
+<?php include('./head.php') ?>
 
-<body>
-    <header>
-        <h3>Formulir pemesananan motor</h3>
-    </header>
+<!-- <body> -->
+<header>
+    <p>
+        <b>
+            FORMULIR PENDAFTARAN USER
+        </b>
+    </p>
+</header>
 
-    <form action="storeuser.php" method="POST">
 
-        <fieldset>
+<form action="storeuser.php" method="POST">
+    <div class="container">
+        <div class="card card-user">
+            <div class="card-body">
 
-            <p>
-                <label for="nama">Nama: </label>
-                <input type="text" name="nama" placeholder="nama" />
-            </p>
-            <p>
-                <label for="username">Username: </label>
-                <input type="text" name="username" placeholder="username" />
-            </p>
-            <p>
-                <label for="no_hp">No Hp: </label>
-                <input type="text" name="no_hp" placeholder="no_hp" />
-            </p>
-            <p>
-                <label for="password">Password: </label>
-                <input type="text" name="password" placeholder="password" />
-            </p>
 
-            <p>
-                <input type="submit" value="Daftar" name="daftar" />
-            </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nama">Nama: </label>
+                        <input class="form-control" type="text" name="nama" placeholder="Nama" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="username">Username: </label>
+                        <input class="form-control" type="text" name="username" placeholder="Username" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="no_hp">No Hp: </label>
+                        <input class="form-control" type="text" name="no_hp" placeholder="No hp" aria-label="default input example">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="password">Password: </label>
+                        <input class="form-control" type="password" name="password" placeholder="password" aria-label="default input example">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" value="Daftar" name="daftar" class="btn btn-dark" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 
-        </fieldset>
+<?php
+include('bottom.php');
+?>
+<!-- </body>
 
-    </form>
-
-</body>
-
-</html>
+</html> -->

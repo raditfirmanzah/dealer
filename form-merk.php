@@ -13,20 +13,20 @@
     </header>
 
     <form action="storemerk.php" method="POST">
+        <div class="custom-info">
+            <fieldset>
 
-        <fieldset>
+                <div class="input-box">
+                    <label for="nama_merk">Nama Merk: </label>
+                    <input type="text" name="nama_merk" placeholder="nama merk" />
+                </div>
 
-            <p>
-                <label for="nama_merk">Nama Merk: </label>
-                <input type="text" name="nama_merk" placeholder="nama merk" />
-            </p>
+                <div class="input-box">
+                    <input type="submit" value="Daftar" name="daftar" />
+                </div>
 
-            <p>
-                <input type="submit" value="Daftar" name="daftar" />
-            </p>
-
-        </fieldset>
-
+            </fieldset>
+        </div>
     </form>
 
 </body>

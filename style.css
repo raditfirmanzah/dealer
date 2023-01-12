@@ -1,25 +1,28 @@
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Profile.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Profile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    background-size: cover;
-    height: 100%;
+    background-size: cover; */
+   
+    background-color: rgb(0, 221, 255);
+   
 
 }
 
 header p{
+    margin-top: 2rem;
     font-size: xx-large;
     text-align: center;
     color: white;
 }
 
-.tabel-user{
+/* .tabel-user{
     background-color: white;
     width: 40%;
     margin: auto;
-}
+} */
 
 .table-motor{
     background-color: white;
@@ -29,7 +32,7 @@ header p{
 
 .table-merk{
     background-color: white;
-    width: 20%;
+    width: 30%;
     margin: auto;
 }
 
@@ -43,4 +46,25 @@ p{
     color: white    ;
 }
 
+/* fieldset{
+    width: 30%;
+    margin: auto;
+    border-radius: 30px;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.354), rgba(255, 255, 255, 0.354)); */
+    
+label{
+    color: black;
+    padding-top: 1rem;
+    
+}
 
+.btn-dark{
+    margin-top: 1rem;
+}
+
+.card-user{
+    
+    margin: auto;
+    width: 70%;
+     background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
+}

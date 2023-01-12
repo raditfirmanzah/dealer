@@ -1,10 +1,9 @@
-
 <?php
 
 include("koneksi.php");
 
 
-if( !isset($_GET['id']) ){
+if (!isset($_GET['id'])) {
     header('Location: listmerk.php');
 }
 
@@ -17,7 +16,7 @@ $query = mysqli_query($db, $sql);
 $siswa = mysqli_fetch_assoc($query);
 
 
-if( mysqli_num_rows($query) < 1 ){
+if (mysqli_num_rows($query) < 1) {
     die("data tidak ditemukan...");
 }
 
@@ -26,6 +25,7 @@ if( mysqli_num_rows($query) < 1 ){
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>merk</title>
 </head>
@@ -41,18 +41,21 @@ if( mysqli_num_rows($query) < 1 ){
 
             <input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
 
-        <p>
-            <label for="nama_merk">Nama Merk :</label>
-            <input type="text" name="nama_merk" placeholder="nama_merk" value="<?php echo $merk['nama_merk'] ?>" />
-        </p>
-         <p>
-            <input type="submit" value="Simpan" name="simpan" />
-        </p>
+            <p>
+
+
+                <label for="nama_merk">Nama Merk :</label>
+                <input type="text" name="nama_merk" placeholder="nama_merk" value="<?php echo $merk['nama_merk'] ?>" />
+            </p>
+            <p>
+                <input type="submit" value="Simpan" name="simpan" />
+            </p>
 
         </fieldset>
 
 
     </form>
 
-    </body>
+</body>
+
 </html>
