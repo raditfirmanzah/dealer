@@ -8,44 +8,45 @@ include('head.php');
     </h1>
 </header>
 
+<div class="tabel-user">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nama</th>
+                    <th>Username</th>
+                    <th>No Hp</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
 
-<div class="table-responsive">
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nama</th>
-                <th>Username</th>
-                <th>No Hp</th>
-                <th>Password</th>
-            </tr>
-        </thead>
-        <tbody>
+                <?php
+                $sql = "SELECT * FROM user";
+                $query = mysqli_query($db, $sql);
 
-            <?php
-            $sql = "SELECT * FROM user";
-            $query = mysqli_query($db, $sql);
+                while ($user = mysqli_fetch_array($query)) {
+                    echo "<tr>";
 
-            while ($user = mysqli_fetch_array($query)) {
-                echo "<tr>";
+                    echo "<td>" . $user['id'] . "</td>";
+                    echo "<td>" . $user['nama'] . "</td>";
+                    echo "<td>" . $user['username'] . "</td>";
+                    echo "<td>" . $user['no_hp'] . "</td>";
+                    echo "<td>" . $user['password'] . "</td>";
 
-                echo "<td>" . $user['id'] . "</td>";
-                echo "<td>" . $user['nama'] . "</td>";
-                echo "<td>" . $user['username'] . "</td>";
-                echo "<td>" . $user['no_hp'] . "</td>";
-                echo "<td>" . $user['password'] . "</td>";
+                    echo "<td>";
+                    echo "<a href=edituser.php?id=$user[id] class='btn btn-warning'>Edit</a> | ";
+                    echo '<a href="hapususer.php?id= ' . $user['id'] . '" class="btn btn-danger">Hapus</a>';
+                    echo "</td>";
 
-                echo "<td>";
-                echo "<a href=edituser.php?id=$user[id] class='btn btn-warning'>Edit</a> | ";
-                echo '<a href="hapususer.php?id= ' . $user['id'] . '" class="btn btn-danger">Hapus</a>';
-                echo "</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
 
-                echo "</tr>";
-            }
-            ?>
-        </tbody>
-
-    </table>
+        </table>
+    </div>
 </div>
 
 
