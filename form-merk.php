@@ -18,7 +18,7 @@
 
             <p>
                 <label for="nama_merk">Nama Merk: </label>
-                <input type="text" name="nama_merk" placeholder="nama_merk" />
+                <input type="text" name="nama_merk" placeholder="nama merk" />
             </p>
 
             <p>
