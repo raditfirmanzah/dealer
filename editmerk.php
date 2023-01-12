@@ -35,34 +35,34 @@ include('head.php');
 </head>
 
 <body> -->
-    <header>
-        <h3>Formulir Edit Customer</h3>
-    </header>
+<header>
+    <p>
+        <b>
+            Formulir Edit Customer
+    </p>
+</header>
 
-    <form action="proseseditmerk.php" method="POST">
-
+<form action="proseseditmerk.php" method="POST">
+    <input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
     <div class="container">
         <div class="card card-user-edit">
             <div class="card-body">
 
-    <fieldset>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="nama_merk">Nama Merk :</label>
+                        <input class="form-control" type="text" name="nama_merk" placeholder="Nama Merk" aria-label="default input example" value="<?php echo $merk['nama_merk'] ?>">
 
-<input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+                    </div>
+                </div>
 
-<p>
-
-
-    <label for="nama_merk">Nama Merk :</label>
-    <input type="text" name="nama_merk" placeholder="nama_merk" value="<?php echo $merk['nama_merk'] ?>" />
-</p>
-<p>
-    <input type="submit" value="Simpan" name="simpan" />
-</p>
-
-</fieldset>
-
-
-    </form>
+            </div>
+        </div>
+    </div>
+</form>
 
 <!-- </body>
 
