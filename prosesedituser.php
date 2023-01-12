@@ -19,7 +19,7 @@ if(isset($_POST['simpan'])){
     
     if( $query ) {
        
-        header('Location: list-reservasi.php');
+        header('Location: listuser.php');
     } else {
        
         die("Gagal menyimpan perubahan...");
