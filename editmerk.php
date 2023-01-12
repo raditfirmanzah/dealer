@@ -45,7 +45,7 @@ include('head.php');
 <form action="proseseditmerk.php" method="POST">
     <input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
     <div class="container">
-        <div class="card card-user-edit">
+        <div class="card card-merk-edit">
             <div class="card-body">
 
                 <div class="row">

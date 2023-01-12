@@ -55,7 +55,7 @@ if (mysqli_num_rows($query) < 1) {
 <form action="proseseditmotor.php" method="post">
     <input type="hidden" name="id" value="<?php echo $motor['id'] ?>">
     <div class="container">
-        <div class="card card-user-edit">
+        <div class="card card-motor-edit">
             <div class="card-body">
 
                 <div class="row">
