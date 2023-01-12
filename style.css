@@ -1,0 +1,15 @@
+/* body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Profile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    height: 100%;
+
+} */
+
+
+body{
+    background-image: url(profile.jpg);
+}
