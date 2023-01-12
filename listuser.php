@@ -8,7 +8,7 @@ include('head.php');
     </p>
 </header>
 
-<div class="tabel-user">
+<div class="table-user">
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
@@ -64,7 +64,7 @@ include('head.php');
             </nav>
         </div>
     </div>
-
-    <?php
-    include('bottom.php');
-    ?>
+</div>
+<?php
+include('bottom.php');
+?>

@@ -30,6 +30,13 @@ header p{
     margin: auto;
 }
 
+.table-user{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+}
+
+
 .table-merk{
     background-color: white;
     width: 30%;
@@ -54,6 +61,7 @@ p{
     
 label{
     color: black;
+    padding-bottom: 2px;
     padding-top: 1rem;
     
 }
@@ -63,6 +71,41 @@ label{
 }
 
 .card-user{
+    
+    margin: auto;
+    width: 70%;
+     background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
+}
+
+.card-motor{
+    
+    margin: auto;
+    width: 70%;
+     background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
+}
+
+.card-merk{
+    
+    margin: auto;
+    width: 40%;
+     background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
+}
+
+.card-merk-edit{
+    
+    margin: auto;
+    width: 70%;
+     background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
+}
+
+.card-user-edit{
+    
+    margin: auto;
+    width: 70%;
+     background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
+}
+
+.card-motor-edit{
     
     margin: auto;
     width: 70%;
