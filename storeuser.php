@@ -14,7 +14,7 @@ if (isset($_POST['daftar'])) {
 
 
     // 
-    $sql = "INSERT INTO customer (id, nama, username, no_hp, password) VALUE ('$no_id', '$nm_customer', '$gender')";
+    $sql = "INSERT INTO user (id, nama, username, no_hp, password) VALUE ('$id', '$nama', '$username', '$no_hp', '$password')";
     $query = mysqli_query($db, $sql);
 
     // 
