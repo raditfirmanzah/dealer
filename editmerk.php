@@ -22,40 +22,48 @@ if (mysqli_num_rows($query) < 1) {
 
 ?>
 
+<?php
+include('head.php');
+?>
 
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
     <title>merk</title>
 </head>
 
-<body>
+<body> -->
     <header>
         <h3>Formulir Edit Customer</h3>
     </header>
 
     <form action="proseseditmerk.php" method="POST">
 
-        <fieldset>
+    <div class="container">
+        <div class="card card-user-edit">
+            <div class="card-body">
 
-            <input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
+    <fieldset>
 
-            <p>
+<input type="hidden" name="id" value="<?php echo $merk['id'] ?>" />
+
+<p>
 
 
-                <label for="nama_merk">Nama Merk :</label>
-                <input type="text" name="nama_merk" placeholder="nama_merk" value="<?php echo $merk['nama_merk'] ?>" />
-            </p>
-            <p>
-                <input type="submit" value="Simpan" name="simpan" />
-            </p>
+    <label for="nama_merk">Nama Merk :</label>
+    <input type="text" name="nama_merk" placeholder="nama_merk" value="<?php echo $merk['nama_merk'] ?>" />
+</p>
+<p>
+    <input type="submit" value="Simpan" name="simpan" />
+</p>
 
-        </fieldset>
+</fieldset>
 
 
     </form>
 
-</body>
+<!-- </body>
 
-</html>
+</html> -->

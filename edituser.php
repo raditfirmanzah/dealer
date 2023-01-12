@@ -46,9 +46,9 @@ if( mysqli_num_rows($query) < 1 ){
         <fieldset>
 
            <div class="row">
-           <div class="col-md-6">
+          
             <input type="hidden" name="id" value="<?php echo $user['id'] ?>" />
-            </div>
+     
 
        <div class="col-md-6">
        <p>
@@ -84,7 +84,9 @@ if( mysqli_num_rows($query) < 1 ){
        </div>
     </div>
         </fieldset>
-
+</div>
+</div>
+</div>
 
     </form>
     </div>
