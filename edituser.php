@@ -46,44 +46,32 @@ if (mysqli_num_rows($query) < 1) {
         <div class="container">
             <div class="card card-user-edit">
                 <div class="card-body">
-
-
-
-
-
                     <div class="row">
-
-
-
-
                         <div class="col-md-6">
-                            <p>
-                                <label for="nama">Nama :</label>
-                                <input type="text" name="nama" placeholder="nama" value="<?php echo $user['nama'] ?>" />
-                            </p>
+
+                            <label for="nama">Nama :</label>
+                            <input class="form-control" type="text" name="nama" placeholder="Nama" aria-label="default input example" value="<?php echo $user['nama'] ?>">
                         </div>
                         <div class="col-md-6">
-                            <p>
-                                <label for="username">Username:</label>
-                                <input type="text" name="username" placeholder="username" value="<?php echo $user['username'] ?>" />
-                            </p>
+
+                            <label for="username">Username:</label>
+                            <input class="form-control" type="text" name="username" placeholder="Username" aria-label="default input example" value="<?php echo $user['username'] ?>">
+
                         </div>
                         <div class="col-md-6">
-                            <p>
-                                <label for="no_hp">No Hp :</label>
-                                <input type="text" name="no_hp" placeholder="no_hp" value="<?php echo $user['no_hp'] ?>" />
-                            </p>
+                            <label for="no_hp">No Hp :</label>
+                            <input class="form-control" type="text" name="no_hp" placeholder="No Hp" aria-label="default input example" value="<?php echo $user['no_hp'] ?>">
+
                         </div>
                         <div class="col-md-6">
-                            <p>
-                                <label for="password">Password :</label>
-                                <input type="text" name="password" placeholder="password" value="<?php echo $user['password'] ?>" />
-                            </p>
+
+                            <label for="password">Password :</label>
+                            <input class="form-control" type="password" name="password" placeholder="password" aria-label="default input example" value="<?php echo $user['password'] ?>">
                         </div>
-                        <div class="col-md-6">
-                            <p>
-                                <input type="submit" value="Simpan" name="simpan" />
-                            </p>
+                        <div class="col-md-12">
+
+                            <input type="submit" value="Simpan" name="simpan" class="btn btn-dark" />
+
                         </div>
                     </div>
                 </div>
