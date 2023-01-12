@@ -49,10 +49,10 @@ if (mysqli_num_rows($query) < 1) {
 </body>
 <form action="proseseditmotor.php" method="post">
     <fieldset>
-        <input type="hidden" name="id" value="<?php echo $reservasi['id'] ?>">
+        <input type="hidden" name="id" value="<?php echo $motor['id'] ?>">
         <p>
             <label for="id_user">id user: </label>
-            <select name="id_customer">
+            <select name="id_user">
                 <option value="">Pilih User</option>
                 <?php
                 while ($user = mysqli_fetch_assoc($queryuser)) {
@@ -62,7 +62,7 @@ if (mysqli_num_rows($query) < 1) {
         </p>
         <p>
             <label for="id_merk">id_merk: </label>
-            <select name="id_kamar">
+            <select name="id_merk">
                 <option value="">Pilih Nama Merk</option>
                 <?php
                 while ($merk = mysqli_fetch_assoc($querymerk)) {
@@ -72,7 +72,7 @@ if (mysqli_num_rows($query) < 1) {
         </p>
         <p>
             <label for="warna">Warna: </label>
-            <input type="text" name="" value="<?php echo $motor['warna'] ?>" />
+            <input type="text" name="warna" value="<?php echo $motor['warna'] ?>" />
         </p>
         <p>
             <label for="kode_mesin">Kode Mesin: </label>

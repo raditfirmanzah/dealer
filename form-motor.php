@@ -68,7 +68,10 @@
                     <label for="no_polisi">No Polisi: </label>
                     <input type="text" name="no_polisi">
                 </div>
-
+                <div class="input-box">
+                    <label for="total">Total: </label>
+                    <input type="text" name="total">
+                </div>
                 <p style="margin-top: 1rem; font-size: medium">
                     <input type="submit" value="Daftar" name="daftar" />
                 </p>
