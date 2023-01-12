@@ -17,7 +17,7 @@ if (isset($_POST['daftar'])) {
     $total = $_POST['total'];
 
     // 
-    $sql = "INSERT INTO motor (id, id_user, id_merk, warna, kode_mesin, cc, no_rangka, no_polisi, total) VALUE ('$id', '$id_user', '$id_merk', '$warna', '$kode_mesin', '$cc', '$no_rangka', '$mo_polisi', '$total')"; 
+    $sql = "INSERT INTO motor (id, id_user, id_merk, warna, kode_mesin, cc, no_rangka, no_polisi, total) VALUE ('$id', '$id_user', '$id_merk', '$warna', '$kode_mesin', '$cc', '$no_rangka', '$no_polisi', '$total')"; 
     $query = mysqli_query($db, $sql);
 
     // 
