@@ -40,7 +40,7 @@ include("head.php")
 
                     <?php
 
-                    $sql = "SELECT motor.id,motor.id_user,motor.id_merk,motor.warna,motor.kode_mesin,motor.cc,motor.no_rangka,motor.no_polisi,user.nama,merk.nama_merk FROM motor LEFT JOIN user ON motor.id_user=user.id LEFT JOIN merk ON motor.id_merk=merk.id ";
+                    $sql = "SELECT motor.id,motor.id_user,motor.id_merk,motor.warna,motor.kode_mesin,motor.cc,motor.no_rangka,motor.no_polisi,motor.total,user.nama,merk.nama_merk FROM motor LEFT JOIN user ON motor.id_user=user.id LEFT JOIN merk ON motor.id_merk=merk.id ";
                     $query = mysqli_query($db, $sql);
 
 

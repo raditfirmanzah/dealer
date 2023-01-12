@@ -13,7 +13,7 @@ $id = $_GET['id'];
 
 $sql = "SELECT * FROM merk WHERE id=$id";
 $query = mysqli_query($db, $sql);
-$siswa = mysqli_fetch_assoc($query);
+$merk = mysqli_fetch_assoc($query);
 
 
 if (mysqli_num_rows($query) < 1) {

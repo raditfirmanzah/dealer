@@ -13,7 +13,7 @@ $id = $_GET['id'];
 
 $sql = "SELECT * FROM user WHERE id=$id";
 $query = mysqli_query($db, $sql);
-$siswa = mysqli_fetch_assoc($query);
+$user = mysqli_fetch_assoc($query);
 
 
 if( mysqli_num_rows($query) < 1 ){
