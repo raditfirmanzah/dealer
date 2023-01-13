@@ -17,7 +17,8 @@ include('head.php')
                 <tr  class="table-secondary">
                     <th>Id</th>
                     <th>Nama Merk</th>
-
+                    <th>Tindakan</th>
+                </tr>
             </thead>
             <tbody>
                 <?php

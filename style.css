@@ -112,6 +112,11 @@ label{
      background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
 }
 
+.d-block img{
+    width: 200px;
+    height: 350px;
+}
+
 
 .atas img{
     border: 5px solid white;
