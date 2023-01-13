@@ -7,7 +7,7 @@ include('head.php');
 
     <div class="row">
       <!-- gambar -->
-      <div class="col-8">
+      <div class="col-8 pt-5 pb-5">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -17,24 +17,15 @@ include('head.php');
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="logo.jpg" class="d-block" alt="..." style="width: 900px; height: 650px;">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
+              
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="motor.jpg" class="d-block" alt="..." style="width: 900px; height: 650px;">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
+              <img src="yamaha.png" class="d-block" alt="..." style="width: 900px; height: 650px;">
+              
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
+              <img src="gb.png" class="d-block" alt="..." style="width: 900px; height: 650px;">
+              
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
