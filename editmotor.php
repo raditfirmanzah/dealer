@@ -11,6 +11,8 @@ if (!isset($_GET['id'])) {
 //
 $id = $_GET['id'];
 
+echo $id;
+
 // 
 $sql = "SELECT * FROM motor WHERE id=$id";
 $query = mysqli_query($db, $sql);
@@ -30,7 +32,7 @@ if (mysqli_num_rows($query) < 1) {
 <html lang="en">
 
 <head>
-     <!-- Required meta tags -->
+      Required meta tags -->
 <!-- <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css"> -->
