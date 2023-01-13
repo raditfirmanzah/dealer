@@ -14,10 +14,11 @@ include('head.php')
     <div class="table-responsive">
         <table class="table table-hover ">
             <thead>
-                <tr>
+                <tr  class="table-secondary">
                     <th>Id</th>
                     <th>Nama Merk</th>
-
+                    <th>Tindakan</th>
+                </tr>
             </thead>
             <tbody>
                 <?php

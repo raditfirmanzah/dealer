@@ -118,3 +118,9 @@ label{
 }
 
 
+.atas img{
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 40%;
+}
+

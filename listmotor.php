@@ -23,7 +23,7 @@ include("head.php")
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
-                <tr>
+                <tr  class="table-secondary">
                     <th>Id</th>
                     <th>Id User</th>
                     <th>Id Merk</th>
