@@ -12,12 +12,13 @@ include('head.php');
     <div class="table-responsive">
         <table class="table table-hover">
             <thead>
-                <tr>
+                <tr class="table-secondary">
                     <th>Id</th>
                     <th>Nama</th>
                     <th>Username</th>
                     <th>No Hp</th>
                     <th>Password</th>
+                    <th>Tindakan</th>
                 </tr>
             </thead>
             <tbody>
