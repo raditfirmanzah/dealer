@@ -16,16 +16,16 @@ include('head.php');
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="logo.jpg" class="d-block" alt="..." style="width: 900px; height: 650px;">
-              
+              <img src="logo.jpg" class="d-block" alt="..." style="width: 700px; height: 400px;">
+
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="yamaha.png" class="d-block" alt="..." style="width: 900px; height: 650px;">
-              
+              <img src="yamaha.png" class="d-block" alt="..." style="width: 700px; height: 400px;">
+
             </div>
             <div class="carousel-item">
-              <img src="gb.png" class="d-block" alt="..." style="width: 900px; height: 650px;">
-              
+              <img src="gb.png" class="d-block" alt="..." style="width: 700px; height: 400px;">
+
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -33,7 +33,7 @@ include('head.php');
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -41,7 +41,24 @@ include('head.php');
 
 
       <!-- akhir gambar -->
-      <div class="col-4"></div>
+      <div class="col-4 pt-5">
+
+        <div class="d-flex flex-column mb-3 justify-content-center text-start">
+          <div class="p-2">
+            <h1>
+              <b>
+                Dealer Merdeka
+              </b>
+            </h1>
+          </div>
+
+          <div class="p-2">
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea similique, earum placeat ipsa praesentium doloremque cumque expedita omnis quia cupiditate veniam dolorum sed impedit voluptas aspernatur perferendis! Provident, tempora?
+            </h5>
+          </div>
+        </div>
+      </div>
     </div>
 
 

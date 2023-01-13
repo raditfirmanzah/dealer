@@ -6,7 +6,7 @@ body{
     position: relative;
     background-size: cover; */
    
-    /* background-color: rgb(219, 219, 219); */
+    background-color: rgb(219, 219, 219);
    
 
 }
@@ -111,3 +111,4 @@ label{
     width: 70%;
      background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
 }
+
