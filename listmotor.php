@@ -62,7 +62,8 @@ include("head.php")
 
                     echo "<td>";
                     echo '<a href=editmotor.php?id=' . $motor['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapusmoor.php?id=' . $motor['id'] . '" class="btn btn-danger">Hapus</a>';
+                    echo '<a href="hapusmoor.php?id=' . $motor['id'] . '" class="btn btn-danger">Hapus</a> |';
+                    echo '<a href=detailmotor.php?id=' . $motor['id'] . ' class="btn btn-info">Detail</a>  ';
                     echo "</td>";
 
                     echo "</tr>";
