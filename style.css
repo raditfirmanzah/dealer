@@ -11,6 +11,10 @@ body{
 
 }
 
+nav{
+    background-color: red;
+}
+
 header p{
     margin-top: 2rem;
     font-size: xx-large;
