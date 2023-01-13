@@ -6,16 +6,20 @@ body{
     position: relative;
     background-size: cover; */
    
-    /* background-color: rgb(219, 219, 219); */
+    background-color: rgb(62, 61, 61);
    
 
+}
+
+nav{
+    background-color: red;
 }
 
 header p{
     margin-top: 2rem;
     font-size: xx-large;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* .tabel-user{
@@ -25,7 +29,8 @@ header p{
 } */
 
 .table-motor{
-    background-color: white;
+    border-radius: 30px;
+    background-color: rgb(99, 99, 99);
     width: 90%;
     margin: auto;
 }
@@ -50,7 +55,7 @@ header p{
 
 
 p{
-    color: white    ;
+    color: rgb(0, 0, 0)    ;
 }
 
 /* fieldset{
@@ -111,3 +116,4 @@ label{
     width: 70%;
      background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.354));
 }
+
