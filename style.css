@@ -6,14 +6,12 @@ body{
     position: relative;
     background-size: cover; */
    
-    background-color: rgb(62, 61, 61);
+    background-color: rgb(210, 210, 210);
    
 
 }
 
-nav{
-    background-color: red;
-}
+
 
 header p{
     margin-top: 2rem;
@@ -22,35 +20,34 @@ header p{
     color: rgb(0, 0, 0);
 }
 
-/* .tabel-user{
-    background-color: white;
-    width: 40%;
-    margin: auto;
-} */
 
 .table-motor{
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgb(99, 99, 99);
-    width: 90%;
+    width: 70%;
     margin: auto;
 }
 
 .table-user{
-    background-color: white;
+        border-radius: 20px;
+    background-color: rgb(99, 99, 99);
+    
     width: 60%;
     margin: auto;
 }
 
 
 .table-merk{
-    background-color: white;
+        border-radius: 20px;
+    background-color: rgb(99, 99, 99);
+    
     width: 30%;
     margin: auto;
 }
 
-.table tr td, .table tr th{
+.table tr td{
     
-    color: black;   
+    color: rgb(255, 255, 255);   
 }
 
 
