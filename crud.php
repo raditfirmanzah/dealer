@@ -54,7 +54,7 @@ include('head.php');
 
           <div class="p-2">
             <h5 style="font-size: medium;">
-              Temukan berbagai ragam pilihan motor dari Astra Motor, seluruh tipe dan harga yang kamu cari ada di sini, kami selalu memberikan pelayanan yang berkualitas dan terbaik. Ayo! Cari motor yang sesuai dengan selera kamu.
+              Temukan berbagai ragam pilihan motor dari Merdeka Motor, seluruh tipe dan harga yang kamu cari ada di sini, kami selalu memberikan pelayanan yang berkualitas dan terbaik. Ayo! Cari motor yang sesuai dengan selera kamu.
             </h5>
           </div>
         </div>
