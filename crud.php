@@ -16,7 +16,7 @@ include('head.php');
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="logo.jpg" class="d-block" alt="..." style="width: 700px; height: 400px;">
+              <img src="merdeka.png" class="d-block" alt="..." style="width: 700px; height: 400px;">
 
             </div>
             <div class="carousel-item" data-bs-interval="2000">
