@@ -25,8 +25,8 @@ include("head.php")
             <thead>
                 <tr class="table-secondary">
                     <th>Id</th>
-                    <th>Id User</th>
-                    <th>Id Merk</th>
+                    <th>Nama User</th>
+                    <th>Nama Merk</th>
                     <th>Warna</th>
                     <th>Kode Mesin</th>
                     <th>CC</th>
@@ -48,8 +48,8 @@ include("head.php")
                     echo "<tr>";
 
                     echo "<td>" . $motor['id'] . "</td>";
-                    echo "<td>" . $motor['id_user'] . "</td>";
-                    echo "<td>" . $motor['id_merk'] . "</td>";
+                    echo "<td>" . $motor['nama'] . "</td>";
+                    echo "<td>" . $motor['nama_merk'] . "</td>";
                     echo "<td>" . $motor['warna'] . "</td>";
                     echo "<td>" . $motor['kode_mesin'] . "</td>";
                     echo "<td>" . $motor['cc'] . "</td>";
@@ -62,7 +62,7 @@ include("head.php")
 
                     echo "<td>";
                     echo '<a href=editmotor.php?id=' . $motor['id'] . ' class="btn btn-warning">Edit</a> | ';
-                    echo '<a href="hapusmoor.php?id=' . $motor['id'] . '" class="btn btn-danger">Hapus</a> |';
+                    echo '<a href="hapusmotor.php?id=' . $motor['id'] . '" class="btn btn-danger">Hapus</a> |';
                     echo '<a href=detailmotor.php?id=' . $motor['id'] . ' class="btn btn-info">Detail</a>  ';
                     echo "</td>";
 
